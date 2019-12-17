@@ -1,0 +1,518 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html{
+	font-size:62.5%;
+}
+
+.body{
+	width:100%;
+	max-width:1500px;
+    min-width:600px;
+    margin:auto;
+	background-color:#FFFF;
+}
+
+h1{
+    font-family:"brother-1816","heisei-kaku-gothic-std","Hiragino Kaku Gothic ProN","游ゴシック体","Yu Gothic","YuGothic","メイリオ","Meiryo",sans-serif;
+}
+
+h2{
+    font-family:"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+}
+
+ul,p{
+    font-family:"DINMed,HelveticaNeue-Light","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+}
+
+.wrap{
+	font-size:2.4rem;
+}
+
+/* ここからヘッダー */
+header{
+	background-color:#696969;
+	color:white;
+}
+
+.header_content{
+	display:flex;
+}
+
+.icon{
+	width:50%;
+	padding:22px 0 0 35px;
+}
+
+header h1{
+	margin-top:25px;
+	letter-spacing:.1em;
+}
+
+.menu{
+	margin:30px 0 0 200px;
+}
+
+.menu ul{
+    padding-right:10px;
+    font-size:1.8rem;
+	display:flex;
+	float:right;
+    list-style:none;
+}
+
+.menu li{
+    margin:0 20px;
+	padding:15px 15px 7px 15px;
+	border-bottom:3px double #CCCCCC;
+}
+
+.menu li:hover{
+	opacity:.6;
+	cursor:pointer;
+}
+
+/* ここから見出し*/
+.top_img{
+	height:100vh;
+	background-image:url(../images/top_page/top_img.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+}
+
+.top_title{
+	font-size:4.5rem;
+	color:white;
+	letter-spacing:.1em;
+}
+
+.top_title h2{
+    border-bottom:5px double #CCCCCC;
+}
+
+
+.title_1{
+	padding:250px 0 0 400px;
+}
+
+.title_1::first-letter{
+	font-size:11rem;
+}
+
+.title_2{
+	padding:80px 0 0 700px;
+}
+
+.title_2::first-letter{
+	font-size:11rem;
+}
+
+.top_article{
+	width:90%;
+    margin:auto;
+    line-height:3.8rem;
+	font-size:2.2rem;
+}
+
+.top_article p{
+    font-size:1.6rem;
+}
+
+.top_section{
+	margin-top:200px;
+}
+
+.top_section img{
+	width:100%;
+	height:370px;
+	object-fit:cover;
+}
+
+.top_section div{
+	text-align:center;
+}
+
+.top_section h2{
+	margin:30px 0 20px 0;
+}
+
+/* ここからサブ見出し */
+.sub_article{
+    box-sizing:border-box;
+    margin:150px 0;
+	display:flex;
+}
+
+.sub_article img{
+	width:50%;
+	height:460px;
+}
+
+.sub_article h3{
+    border-left:8px solid #B2CBE4;
+	border-bottom:1px solid #B2CBE4;
+	margin-bottom:30px;
+	padding:.25em 0 .5em .75em;
+}
+
+/* 画像とテキストを逆に*/
+.right{
+	flex-direction:row-reverse;
+}
+
+.left div{
+	padding:80px 0 0 70px;
+}
+
+.right div{
+	padding:80px 70px 0 0;
+}
+
+
+/* ここからオプションメニュー */
+.option_menu{
+    box-sizing:border-box;
+    background-color:#8da0b6;
+	margin:200px 0 200px 0;
+	padding:50px 0;
+}
+
+.option_menu h2{
+	padding-bottom:50px;
+	text-align:center;
+}
+
+.option_menu h2,.option_menu h3,.option_menu p{
+    color:white;
+}
+
+.option{
+	display:flex;
+}
+
+.option img{
+    width:70%;
+    box-shadow:0 0 10px 0;
+    border-radius:180px;
+}
+
+.service_imgs{
+	margin:auto;
+	text-align:center;
+}
+
+.service_imgs h3{
+	margin:15px 0;
+}
+
+.service_imgs p{
+	font-size:1.6rem;
+}
+
+.service_imgs img:hover{
+    box-shadow:0 0 10px 5px #696969;
+	opacity:.8;
+	cursor:pointer;
+	transform:translateY(-2px);
+}
+
+/* ここからFoodセクション */
+.food_option{
+	width:90%;
+    margin:auto;
+    line-height:3rem;
+	display:flex;
+} 
+
+.food_section h1{
+    border-bottom:2px solid #F3A68C;
+    padding:.25em 0 .5em .75em;
+	font-size:5rem;
+	text-align:left;
+}
+
+.food_imgs h2{
+	padding-top:50px;
+} 
+
+.food_imgs ul{
+	display:flex;
+}
+
+.food_imgs img{
+    width:150px;
+    height:800px;
+    margin:100px 20px;
+	object-fit:cover;
+}
+
+.food_option ul{
+	list-style:none;
+}
+
+.side_box{
+    width:35%;
+	height:40%;
+    border:2px solid #C0C0C0;
+    border-radius:30px;
+    margin:300px 0 0 30px;
+    background-color:#FDEDE4;
+	text-align:center;
+	font-size:1.6rem;
+}
+
+.reserve_icon{
+	width:14%;
+	padding-top:30px;
+}
+
+.side_box h2{
+	margin:30px 0 20px 0;
+}
+
+.button a{
+    width:240px;
+    border-radius:10px;
+    box-shadow:0 3px 8px 0 #A9A9A9;
+    margin:0 auto;
+    padding:10px 0;
+    text-align:center;
+    font-size:1.8rem;
+    font-weight:bold;
+	text-decoration:none;
+	background-color:#F3A68C;
+	color:#FFFFFF;
+	display:block;
+}
+
+.side_box a{
+	margin:60px auto;
+}
+
+.button a:hover{
+    box-shadow:0 8px 10px 0 #A9A9A9;
+	opacity:.9;
+	cursor:pointer;
+	transform:translateY(-2px);
+}
+
+/* ここからHotelセクション */
+.hotel_option{
+	margin:auto;
+	margin:100px 0 200px 0;
+}
+
+.hotel_section{
+	margin-top:200px;
+}
+
+.hotel_section h1{
+    width:90%;
+    border-bottom:2px solid #696969;
+    margin:auto;
+    padding:.25em 0 .5em .75em;
+    text-align:left;
+	font-size:4.5rem;
+}
+
+.hotel_top{
+    margin:150px 0;
+	padding:100px 0;
+    font-size:2rem;
+    line-height:1.8em;
+	background-color:#696969;
+    color:white;
+    display:flex;
+}
+
+.hotel_top p{
+    font-size:1.6rem;
+}
+
+.hotel_top h2{
+	padding-bottom:35px;
+}
+
+.hotel_top div{
+    border-right:1px solid white;
+    padding:180px 60px 0 65px;
+}
+
+.price{
+    border:1px solid white;
+	margin-top:85px;
+    padding:35px 0;
+    text-align:center;
+	font-size:2.6rem;
+}
+
+.price span{
+	font-size:4.5rem;
+}
+
+.hotel_top img{
+    width:60%;
+    padding:0 40px 0 50px;
+	object-fit:cover;
+}
+
+.hotel_facility{
+	width:90%;
+	margin:auto;
+	text-align:center;
+}
+
+.hotel_facility h2{
+    margin-bottom:60px;
+    font-size:3.2rem;
+}
+
+.hotel_facility div{
+	margin:auto;
+	margin-bottom:50px;
+}
+
+.hotel_facility img{
+	width:560px;
+    height:400px;
+    margin:25px 0;
+	object-fit:cover;
+}
+
+.hotel_imgs{
+	display:flex;
+	flex-wrap:wrap;
+	position:relative;
+}
+
+.hotel_imgs p{
+	font-size:2.4rem;
+}
+
+.hotel_reserve{
+	width:70%;
+    margin:auto;
+    color:white;
+	display:flex;
+}
+
+.room_type{
+    width:50%;
+    padding:0 0 0 180px;
+    font-size:1.6rem;
+    background-color:#7e837f;
+}
+
+.button_box{
+    width:60%;
+    padding-top:30px;
+    background-color:#f6ae54;
+    font-size:3rem;
+    font-weight:bold;
+	text-align:center;
+}
+
+/* ボタン */
+.hotel_section a{
+    width:35%;
+    margin:50px auto;
+    padding:12px 0;
+    background-color:#ee7800;
+	font-size:1.6rem;
+}
+
+.room_type h2{
+    padding:20px 0 10px 0;
+}
+
+.room_type ul{
+    margin-left:20px;
+    padding-top:10px;
+    list-style:square inside;
+}
+
+.room_type li{
+	padding:15px 0;
+}
+
+/* ここからactivityセクション */
+.activity_option{
+	margin:100px 0;
+}
+
+.activity_option h1{
+    border-bottom:2px solid #00BFFF;
+	width:90%;
+    margin:auto;
+	padding:.25em 0 .5em .75em;
+	font-size:4.5rem;
+	text-align:left;
+}
+
+.activity_section h1{
+	margin-bottom:100px;
+}
+
+.activity_imgs{
+    height:90vh;
+    color:white;
+	text-align:center;
+	background-image:url(../images/activity_option_img/activity_1.jpg);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	filter:grayscale(70%);
+}
+
+.activity_imgs h2{
+    padding-top:210px;
+	font-size:12rem;
+}
+
+.activity_imgs a{
+    margin:50px auto;
+	padding:15px 0;
+	background-color:#00BFFF;
+}
+
+.activity_imgs p{
+    margin-top:45px;
+    font-size:2rem;
+}
+
+/* ここからフッダー */
+footer{
+	background-color:#696969;
+	color:white;
+}
+
+.footer_menu{
+	padding:40px 0 40px 450px;
+}           
+
+.footer_menu ul{
+	display:flex;
+	font-size:1.8rem;
+	list-style:none;
+}
+
+.footer_menu li{
+    margin:0 20px;
+	padding:0 10px 0 10px;
+}
+
+.footer_menu li:hover{
+	opacity:.6;
+	cursor:pointer;
+}
+
+footer div{
+    margin:auto;
+    padding:20px 0;
+    font-size:1.8rem;
+	text-align:center;
+}
+
